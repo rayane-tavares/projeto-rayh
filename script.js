@@ -22,12 +22,12 @@ const perguntas = [
         enunciado: "Foi prescrito: Soro Fisiológico 0,9% 260 ml, NaCl 19% 10 ml,KCl 10% 10 ml, glicose 50% 20 ml, que será administrada na vazão de 40 gt/min. Quanto tempo levará para terminar a infusão",
         alternativas: [
             {
-                texto: "3 horas e 3o minutos",
-                afirmacao: "afirmação"
+                texto: "3 horas e 30 minutos",
+                afirmacao: "errado"
             },
             {
-                texto: "2 horas e 30minutos.",
-                afirmacao: "afirmação"
+                texto: "2 horas e 30 minutos.",
+                afirmacao: "correto"
             }
         ]
     },
@@ -48,7 +48,7 @@ const perguntas = [
         enunciado: "Quantas gotas por minuto, aproximadamente, precisarão ser programadas para que um paciente receba 1500 ml de soro fisiológico 0,9% em 24 horas?",
         alternativas: [
             {
-                texto: "21 goras por minutos",
+                texto: "21 gotas por minutos",
                 afirmacao: "afirmação"
             },
             {
@@ -77,8 +77,13 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
+    if(atual >= perguntas.length) {
+        mostraResultado ();
+        return;
+    }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
     mostraAlternativas();
 }
 
@@ -93,9 +98,15 @@ function mostraAlternativas(){
 
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmacoes;
-    historiaFinal = afirmacoes;
+    historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
 }
+
+function mostraResultado(){
+    caixaPerguntas.textContent = "em ....";
+    caixaResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+ }
 
 mostraPergunta();
