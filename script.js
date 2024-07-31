@@ -103,10 +103,10 @@ function respostaSelecionada(opcaoSelecionada){
     mostraPergunta();
 }
 
-function mostraResultado(){
-    caixaPerguntas.textContent = "em ....";
-    caixaResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
- }
+function mostraResultado() {
+    caixaPerguntas.textContent = "Sabemos que a tecnologia teve um grande avanço principalmente na medicina como favorecido a obtenção de diagnósticos e a realização de procedimentos com maior segurança e precisão...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = " Com o passar dos anos conseguimos diagnósticos mai rapidos sassim podendo judar muitas vidas...";
+}
 
-mostraPergunta();
+mostraPergunta()
