@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Dentro do âmbito da administração de medicamentos, escolha a opção que indica corretamente a graduação mínima de volume para uma seringa de 3 mL, considerando as práticas padrão de medição e dosagem?",
+        enunciado: "Como a matemática é usada para calcular doses de medicamentos em pacientes?",
         alternativas: [
             {
-                texto: "0,1ml",
-                afirmacao: "afirmação"
+                texto: "Calcula doses corforme peso e idade",
+                afirmacao: "Sim correto"
             },
             {
-                texto: "0,5ml",
-                afirmacao: "afirmação"
+                texto: "Calcula a dieta ideal para o paciente.",
+                afirmacao: "Errada"
             }
         ]
     },
     {
-        enunciado: "Foi prescrito: Soro Fisiológico 0,9% 260 ml, NaCl 19% 10 ml,KCl 10% 10 ml, glicose 50% 20 ml, que será administrada na vazão de 40 gt/min. Quanto tempo levará para terminar a infusão",
+        enunciado: " De que forma as fórmulas matemáticas ajudam no diagnóstico de doenças?",
         alternativas: [
             {
-                texto: "3 horas e 30 minutos",
-                afirmacao: "errado"
-            },
-            {
-                texto: "2 horas e 30 minutos.",
+                texto: "Aumenta a duração dos exames.",
                 afirmacao: "correto"
+            },
+            {
+                texto: "Interpreta exames e sinais",
+                afirmacao: "errado"
             }
         ]
     },
     {
-        enunciado: "Em uma prescrição, pede-se a administração de 50 ml de uma solução em um tempo de 35 min. Calcule o número de microgotas/min. necessárias para administrar essa solução no tempo prescrito, e assinale a alternativa correta.",
+        enunciado: "Como a estatística auxilia na medicina preventiva?",
         alternativas: [
             {
-                texto: "86 microgotas/min",
-                afirmacao: "afirmação"
+                texto: "Identifica risco e tendências.",
+                afirmacao: "Certa"
             },
             {
-                texto: "84 microgotas/min",
-                afirmacao: "afirmação"
+                texto: "Elimina completamente o riscos de doenças.",
+                afirmacao: "Errada"
             }
         ]
     },
     {
-        enunciado: "Quantas gotas por minuto, aproximadamente, precisarão ser programadas para que um paciente receba 1500 ml de soro fisiológico 0,9% em 24 horas?",
+        enunciado: "Qual a importância dos algoritmos matemáticos nas máquinas de imagem médica, como tomografias?",
         alternativas: [
             {
-                texto: "21 gotas por minutos",
+                texto: "Processa imagens para diagnóticos.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "5 gotas por minutos.",
-                afirmacao: "afirmação"
+                texto: "Gera imagen sem necessidade de equipamento",
+                afirmacao: "Errada"
             }
         ]
     },
     {
-        enunciado:  "A farmácia de uma determinada unidade de saúde possui Frasco-ampola de Cefalotina Sódica de 1g. Ao se diluir com um volume de 5ml de solvente, obtém-se uma solução total de 5ml. Após a diluição, qual é a concentração de Cefalotina Sódica que se terá por ml?",
+        enunciado:  "Como os cálculos matemáticos ajudam no monitoramento de sinais vitais em UTIs?",
         alternativas: [
             {
-                texto: "50mg",
-                afirmacao: "afirmação"
+                texto: "Monitora e ajusta sinais vitai.",
+                afirmacao: "Correta"
             },
             {
-                texto: "200mg",
-                afirmacao: "afirmação"
+                texto: "Controla o humor do paciente.",
+                afirmacao: "Errada"
             }
         ]
     },
